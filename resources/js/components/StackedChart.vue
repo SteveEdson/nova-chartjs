@@ -1,5 +1,5 @@
 <template>
-  <loading-card :loading="loading" class="min-h-40" :style="card.options.styles">
+  <loading-card :loading="loading" class="min-h-40" >
     <div class="h-6 flex items-center px-6 mt-4">
       <h4 class="mr-3 leading-tight text-sm font-bold">{{ checkTitle }}</h4>
       <div class="flex relative ml-auto flex-shrink-0">
@@ -19,7 +19,7 @@
         </select-control>
       </div>
     </div>
-    <line-chart v-if="!loading" :chart-data="datacollection" :options="options" class="h-48"></line-chart>
+    <line-chart v-if="!loading" :chart-data="datacollection" :options="options" :style="card.options.styles"></line-chart>
   </loading-card>
 </template>
 
