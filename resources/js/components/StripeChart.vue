@@ -19,7 +19,7 @@
         </select-control>
       </div>
     </div>
-    <line-chart v-if="!loading" :chart-data="datacollection" :options="options"></line-chart>
+    <line-chart v-if="!loading" :chart-data="datacollection" :options="options" :style="card.options.styles"></line-chart>
   </loading-card>
 </template>
 
